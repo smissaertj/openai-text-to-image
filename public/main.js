@@ -7,7 +7,7 @@ form.addEventListener('submit', async (e) => {
     showSpinner();
     const data = new FormData(form);
 
-    const response = await fetch('http://localhost:8080/generate', {
+    const response = await fetch('https://openai-text-to-image-fwn9p.kinsta.app/generate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
